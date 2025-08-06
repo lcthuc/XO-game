@@ -10,6 +10,10 @@ const io = socketIO(server);
 // Giao diện public
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.get('/ai', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'ai.html'));
+});
+
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'public/index.html'));
 });
