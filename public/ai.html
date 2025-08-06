@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chơi X-O với Máy</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <h1>Game X-O - Đấu với Máy</h1>
+
+  <!-- Chọn độ khó -->
+  <div id="difficulty-selection">
+    <h2>Chọn độ khó</h2>
+    <button onclick="selectDifficulty('easy')">Dễ</button>
+    <button onclick="selectDifficulty('medium')">Trung bình</button>
+    <button onclick="selectDifficulty('hard')">Khó</button>
+  </div>
+
+  <!-- Chọn X hoặc O -->
+  <div id="symbol-selection" style="display: none;">
+    <h2>Bạn muốn chơi quân nào?</h2>
+    <button onclick="selectSymbol('X')">X</button>
+    <button onclick="selectSymbol('O')">O</button>
+  </div>
+
+  <!-- Bảng chơi -->
+  <div id="game-container" style="display: none;">
+    <div id="game-board"></div>
+    <p id="game-status"></p>
+    <button onclick="restartGame()">Chơi lại</button>
+    <a href="/index.html"><button>Quay lại Menu</button></a>
+  </div>
+
+  <script src="/script-ai.js"></script>
+</body>
+</html>
