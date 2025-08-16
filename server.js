@@ -18,6 +18,10 @@ app.get('/multiplayer', (req, res) => {
     res.sendFile(path.join(__dirname, 'public/multiplayer.html'));
 });
 
+app.get('/ai', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'ai.html'));
+});
+
 // Game logic
 let players = {};
 let board = Array(9).fill(null);

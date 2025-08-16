@@ -25,7 +25,7 @@ function selectSymbol(symbol) {
 }
 
 function createBoard() {
-  const boardDiv = document.getElementById("game-board");
+  const boardDiv = document.getElementById("board");
   boardDiv.innerHTML = "";
   board = Array(9).fill(null);
   gameOver = false;

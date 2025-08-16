@@ -4,17 +4,21 @@
   <meta charset="UTF-8">
   <title>Chơi X-O với Máy</title>
   <link rel="stylesheet" href="/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 <body>
   <h1>Game X-O - Đấu với Máy</h1>
 
   <!-- Chọn độ khó -->
-  <div id="difficulty-selection">
-    <h2>Chọn độ khó</h2>
+ <div id="difficulty-selection">
+  <h2>Chọn độ khó</h2>
+  <div class="button-group">
     <button onclick="selectDifficulty('easy')">Dễ</button>
     <button onclick="selectDifficulty('medium')">Trung bình</button>
     <button onclick="selectDifficulty('hard')">Khó</button>
   </div>
+</div>
 
   <!-- Chọn X hoặc O -->
   <div id="symbol-selection" style="display: none;">
@@ -25,7 +29,7 @@
 
   <!-- Bảng chơi -->
   <div id="game-container" style="display: none;">
-    <div id="game-board"></div>
+    <div id="board"></div>
     <p id="game-status"></p>
     <button onclick="restartGame()">Chơi lại</button>
     <a href="/index.html"><button>Quay lại Menu</button></a>
